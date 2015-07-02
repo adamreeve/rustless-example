@@ -1,7 +1,5 @@
 #![feature(plugin)]
-#![feature(core)]
-#![feature(path)]
-#![feature(net)]
+#![feature(ip_addr)]
 
 #![plugin(deuterium_plugin)]
 #![plugin(docopt_macros)]
