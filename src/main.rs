@@ -13,7 +13,7 @@ extern crate postgres;
 extern crate rustless;
 extern crate typemap;
 extern crate time;
-extern crate "rustc-serialize" as rustc_serialize;
+extern crate rustc_serialize;
 extern crate iron;
 extern crate docopt;
 extern crate uuid;
