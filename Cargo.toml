@@ -16,8 +16,6 @@ typemap = "*"
 time = "*"
 rustc-serialize = "*"
 iron = "*"
-deuterium_orm = "*"
-deuterium_plugin = "*"
 docopt = "*"
 docopt_macros = "*"
 uuid = "*"
@@ -26,5 +24,13 @@ valico = "*"
 url = "*"
 regex = "*"
 regex_macros = "*"
-rustless = "*"
 dsl_macros = "*"
+
+[dependencies.rustless]
+git = "https://github.com/adamreeve/rustless.git"
+
+[dependencies.deuterium_plugin]
+git = "https://github.com/keleshev/deuterium-orm.git"
+
+[dependencies.deuterium_orm]
+git = "https://github.com/keleshev/deuterium-orm.git"
