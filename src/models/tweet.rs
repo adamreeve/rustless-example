@@ -14,8 +14,8 @@ pub struct Tweet {
 impl Tweet {
 
     pub fn get_id(&self) -> &uuid::Uuid { &self.id }
-    pub fn get_author_name(&self) -> &str { self.author_name.as_slice() }
-    pub fn get_content(&self) -> &str { self.content.as_slice() }
+    pub fn get_author_name(&self) -> &str { &self.author_name }
+    pub fn get_content(&self) -> &str { &self.content }
     pub fn get_created_at(&self) -> &time::Timespec { &self.created_at }
     pub fn get_updated_at(&self) -> &time::Timespec { &self.updated_at }
 
