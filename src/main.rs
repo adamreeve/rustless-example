@@ -38,11 +38,12 @@ docopt!(Args derive Debug, "
 Example backend.
 
 Usage:
-  backend run
+  backend [--ip=<ip>] [--port=<port>] run
   backend g migration <migration-name>
   backend db migrate [<version>]
   backend db rollback [<steps>]
   backend --version
+  backend --help
 
 Options:
   -h --help        Show this screen.
