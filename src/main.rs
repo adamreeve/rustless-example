@@ -126,7 +126,7 @@ fn main() {
 
         let name = deuterium_orm::migration::create_migration_file(
           &args.arg_migration_name[..],
-          path::PathBuf::new("src/db/migrations")
+          path::PathBuf::from("src/db/migrations")
         );
 
         println!("Migration with name {} was generated.", name);
