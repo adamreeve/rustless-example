@@ -1,0 +1,39 @@
+app:
+    build: ./docker/app
+    ports:
+        - "8080:8080"
+    expose:
+        - "8080"
+    links:
+        - db:db
+    volumes:
+        - rustless-example:/app
+    volumes_from:
+        - rustdata
+    environment:
+        - POSTGRES_CONNECTION=postgresql://rustless:rustless@db/rustless
+
+rustdata:
+    build: ./docker/app
+    dockerfile: data.Dockerfile
+
+db:
+    build: ./docker/postgres
+    environment:
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=p@$$w0Rd
+    expose:
+        - "5432"
+
+dbclient:
+    image: postgres:9.4.1
+    links:
+        - db:db
+    command: /bin/true
+    environment:
+        - PGUSER=rustless
+        - PGPASSWORD=rustless
+        - PGDATABASE=rustless
+        - PGHOST=db
+        - PGPORT=5432
+
