@@ -30,7 +30,7 @@ dsl_macros = "*"
 git = "https://github.com/adamreeve/rustless.git"
 
 [dependencies.deuterium_plugin]
-git = "https://github.com/keleshev/deuterium-orm.git"
+git = "https://github.com/adamreeve/deuterium-orm.git"
 
 [dependencies.deuterium_orm]
-git = "https://github.com/keleshev/deuterium-orm.git"
+git = "https://github.com/adamreeve/deuterium-orm.git"
