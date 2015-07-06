@@ -1,4 +1,4 @@
-FROM adreeve/rust:2015-07-02
+FROM docker.io/adreeve/rust-nightly:2015-07-02
 
 VOLUME /root/.cargo
 
